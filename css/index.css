@@ -1,0 +1,161 @@
+body, p, h1, h2{
+   margin: 0;
+   font-family: sans-serif;
+}
+body{
+   overflow: hidden;
+}
+a{color: inherit;text-decoration: none;}
+
+
+/**
+ * TOOLBAR
+ */
+header{
+   padding: 3px;
+   background: #52A2D8;
+}
+.toolbar{
+   padding: 10px;
+   position: relative;
+   z-index: 10000;
+   box-sizing: border-box;
+   -webkit-app-region: drag;
+}
+   .toolbar p{
+      color: rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+      cursor: default;
+      display: inline-block;
+      margin-right: 20px;
+      -webkit-app-region: no-drag;
+      cursor: pointer;
+      transition: 0.3s;
+   }
+   .toolbar p:hover{
+      color: rgba(0, 0, 0, 0.4);
+   }
+   .toolbar .active{
+      color: rgba(0, 0, 0, 0.5);
+   }
+   .toolbar p::selection, .toolbar li::selection, .toolbar div::selection{
+      background: rgba(0, 0, 0, 0);
+   }
+   .toolbar ul{
+      -webkit-app-region: no-drag;
+      position: absolute;
+      z-index: 15;
+      top: 0px; right: 10px;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+   }
+      .toolbar li{
+         display: inline-block;
+         vertical-align: bottom;
+         cursor: pointer;
+         padding: 10px 5px;
+         cursor: pointer;
+      }
+      .toolbar #close{
+         padding: 10px;
+      }
+      .toolbar li div{
+         transition: 0.2s;
+      }
+   .toolbar .minimize{
+      width: 15px; height: 12px;
+      position: relative;
+      bottom: 1px;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+   }
+   .toolbar li:hover .minimize{
+      border-bottom: 3px solid rgb(255, 255, 255);
+   }
+   .toolbar .square{
+      width: 12px; height: 9px;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-top: 3px solid rgba(0, 0, 0, 0.3);
+   }
+   .toolbar li:hover .square{
+      border: 2px solid rgb(255, 255, 255);
+      border-top: 3px solid rgb(255, 255, 255);
+   }
+   .toolbar .close{
+      font-weight: bold;
+      position: relative;
+      top: 3px;
+      transform: scale(1.5,1);
+      color: rgba(0, 0, 0, 0.3);
+   }
+   .toolbar li:hover .close{
+      color: rgb(255, 255, 255);
+   }
+
+
+
+
+/**
+ * PICROSS CSS
+ */
+.picross{
+   margin-top: 50px;
+   margin-left: 150px;
+}
+table{
+   border-collapse: collapse;
+}
+   thead{
+      text-align: center;
+   }
+      thead td{
+         vertical-align: bottom;
+      }
+      thead p{
+         padding: 3px;
+         cursor: pointer;
+      }
+   tbody td:not(.blank){
+      padding: 15px;
+      border: 1px solid #333;
+      cursor: pointer;
+   }
+   tbody .blank{
+      text-align: right;
+   }
+   tbody .blank p{
+      display: inline-block;
+      padding: 0 5px;
+      cursor: pointer;
+   }
+.black{
+   background: #555;
+}
+.green{
+   background: #2AB000;
+}
+
+
+/**
+ * RESPONSIVE CSS
+ */
+@media screen and (max-width: 500px){
+
+}
+
+@media screen and (max-height: 200px){
+   .edit-box{
+      background: none;
+   }
+}
+/**
+ * VIEWPORT CSS
+ */
+@viewport{
+   zoom: 1.0;
+   width: extend-to-zoom;
+}
+@-ms-viewport{
+   zoom: 1.0;
+   width: extend-to-zoom;
+}

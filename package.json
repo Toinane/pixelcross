@@ -1,0 +1,22 @@
+{
+  "name": "mypicross",
+  "version": "1.0.0",
+  "description": "mypicross application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Toinane/mypicross",
+  "keywords": [
+    "mypicross",
+    "Toinane",
+    "Crea-THAT",
+    "crea-that"
+  ],
+  "devDependencies": {
+    "electron": "^1.4.1"
+  },
+  "author": "Toinane",
+  "homepage": "http://toinane.crea-th.at",
+  "license": "CC0-1.0"
+}

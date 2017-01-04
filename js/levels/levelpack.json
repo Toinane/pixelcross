@@ -1,0 +1,55 @@
+{
+   "author": "Toinane",
+   "namepack": "LevelPack Easy",
+   "numberlevel": 6,
+   "levels": {
+      "1": {
+         "name": "Level 1 : Wheel",
+         "difficulty": "Easy",
+         "level": {
+            "1": "-###-",
+            "2": "#-#-#",
+            "3": "##-##",
+            "4": "#-#-#",
+            "5": "-###-"
+         },
+         "timebase": "2 minutes",
+         "numberplay": "129304"
+      },
+      "2": {
+         "name": "Level 2 : Grid",
+         "difficulty": "Easy",
+         "level": "#-#-#:-#-#-:#-#-#:-#-#-:#-#-#",
+         "timebase": "2 minutes",
+         "numberplay": "129243"
+      },
+      "3": {
+         "name": "Level 3 : Shuriken",
+         "difficulty": "Easy",
+         "level": "-###-:#-#-#:##-##:#-#-#:-###-",
+         "timebase": "2 minutes",
+         "numberplay": "93942"
+      },
+      "4": {
+         "name": "Level 4 : Snowflake",
+         "difficulty": "Easy",
+         "level": "#-#-#:-###-:##-##:-###-:#-#-#",
+         "timebase": "3 minutes",
+         "numberplay": "239828"
+      },
+      "5": {
+         "name": "Level 5 : bear",
+         "difficulty": "Easy",
+         "level": "#---#:#####:#-#-#:##-##:#####",
+         "timebase": "3 minutes",
+         "numberplay": "3284"
+      },
+      "6": {
+         "name": "Level 6",
+         "difficulty": "Easy",
+         "level": "##-##:#-##-:-##-#:##-##:#-##-",
+         "timebase": "4 minutes",
+         "numberplay": "230"
+      }
+   }
+}

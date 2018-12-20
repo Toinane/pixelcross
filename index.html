@@ -1,39 +1,15 @@
 <!doctype html>
 <html>
-	<head>
-		<title>MyPicross</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="./css/index.css" />
-		<link rel="shortcut icon" href="mypicross.ng" />
-	</head>
-	<body>
-		<header>
-			<div class="toolbar">
-				<p id="onTop">My Picross</p>
-				<ul>
-					<li id="minimize"><div class="minimize"></div></li>
-					<li id="square"><div class="square"></div></li>
-					<li id="close"><div class="close">X</div></li>
-				</ul>
-			</div>
-		</header>
-		<section class="picross">
-			<table>
-				<thead>
-					<tr>
-						<td></td>
-						<td><p>2</p><p>2</p></td>
-						<td><p>2</p></td>
-						<td><p>1</p><p>1</p></td>
-						<td><p>2</p></td>
-						<td><p>2</p><p>2</p></td>
-					</tr>
-				</thead>
-				<tbody>
-					
-				</tbody>
-			</table>
-		</section>
-      <script src="./js/picross.js"></script>
-   </body>
+  <head>
+    <title>MyPicross</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="mypicross.png" />
+  </head>
+  <body>
+    <section class="picross">
+      <table id="game"></table>
+    </section>
+    <script src="./js/picross.js"></script>
+  </body>
 </html>

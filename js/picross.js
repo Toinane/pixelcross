@@ -1,10 +1,10 @@
 async function createLevel(level) {
-   let game = '<thead><td></td>';
+   let game = '<thead><th></th>';
 
    await level.clues.vertical.map(async (line, i) => {
-      game += '<td>';
+      game += '<th>';
       await line.map(number => game += `<span>${number}</span>`);
-      game += '</td>';
+      game += '</th>';
    });
 
    game += '</thead><tbody>';
@@ -83,7 +83,7 @@ function generateClues(map) {
 }
 
 function main() {
-   const map = randomizerMap(4, 4);
+   const map = randomizerMap(10, 10);
    const level = generateClues(map);
 
    createLevel(level);
